@@ -13,8 +13,6 @@ This e-learning platform is designed to offer users the ability to view their co
 Main Features:
 Course Management: Students can access various courses, view materials, and track their progress.
 
-Quiz Functionality: Students can take quizzes related to the courses they are enrolled in, helping them assess their understanding.
-
 User Authentication: A robust system for users to register, log in, and log out of their accounts.
 
 React Integration: The project is being refactored to use React, enhancing the overall user interface, performance, and maintainability.
