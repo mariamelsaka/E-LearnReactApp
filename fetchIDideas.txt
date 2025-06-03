@@ -1,0 +1,16 @@
+once click on enroll , all data for that card saved in local storage , this will not make u fetch again
+then in specific page call data from the local storage
+but what if it's a lot of courses ? that u need to go and back> 
+we can say when path name change then clear the local storage 
+
+
+
+other solution but i think it's more complex is to fetch data twice 
+once when fetch all data
+then send id in the pathname 
+and call that id by fetching it again ?
+
+
+or i will see in the api if it's can handle call specfic id from the output
+without fetch again , because each time it's fetch it's give u new data? 
+is this mean i can't do the second solution?

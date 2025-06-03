@@ -1,0 +1,131 @@
+/* start nav bar */
+@import "tailwindcss";
+.navbar {
+    /* height: 200px; */
+    background: linear-gradient(180deg, #5fdfb7a7 -67.07%, #FFFFFF 68.59%, #FFFFFF 100%);
+    /* gbt */
+    height: auto;
+    min-height: 100px;
+    padding: 1rem 2rem;
+}
+
+.container-fluid {
+    /* margin-bottom: 8%; */
+    /* gbt */
+    margin-bottom: 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#logo {
+    /* margin-right: 30px;
+    margin-left: 30px; */
+    /* gbt */
+    margin: 0 20px 0 0;
+    max-width: 160px;
+}
+
+/* gbt */
+.nav-item .nav-link {
+    color: black;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-item .nav-link:hover {
+    color: #20B486;
+}
+
+/* Active NavLink */
+.nav-item .nav-link.active {
+    color: #20B486 !important;
+}
+
+#signIn {
+    margin-left: 400px;
+}
+
+
+
+/* end nav bar */
+.custom-link {
+    background-color: #20B486;
+    border: none;
+    width: 167px;
+    height: 40px;
+    padding: 7px;
+    color: white !important;
+
+
+}
+
+.custom-link:hover {
+    background-color: #1a916e;
+}
+
+
+/* Mobile navbar open styling - up to 767px sm */
+@media (max-width: 767px) {
+    /* When the navbar is open and the "show" class is applied, add margin */
+    .navbar-collapse.show {
+        background-color: rgba(255, 255, 255, 0.4);
+        /* apply the blur */
+        -webkit-backdrop-filter: blur(16px);
+        backdrop-filter: blur(16px);
+        position: absolute;
+        top: 100%;
+        /* Position right under the navbar */
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        padding: 1rem 1.5rem;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 1rem;
+        /* gbt */
+        width: 100%;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .navbar-nav .nav-link {
+        width: 100%;
+        text-align: left;
+        padding: 0.75rem 1rem;
+    }
+
+    .navbar-collapse {
+        -webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
+    }
+    /* When the navbar is open and the "show" class is applied, add margin */
+    .custome-reg, .custome-log {
+        padding-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Tablet - 768px to 1024px md */
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+}
+
+/* Laptop - 1025px to 1280px */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    
+}
+
+/* Desktop - 1281px and up */
+@media (min-width: 1281px) {
+
+}

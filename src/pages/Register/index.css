@@ -1,0 +1,75 @@
+/* start card */
+
+#Password-register, #name-register, #email-register {
+  width: 130%;
+}
+
+#Textarea1-register, #UserName-register {
+  width: 130%;
+}
+
+#Textarea1-register, #UserName-register, .labelUserName, .address {
+  margin-left: 40%;
+}
+
+.LabelTextArea {
+  width: 100%;
+}
+
+#Textarea1-register {
+  height: 140px;
+}
+
+#formInside-register {
+  width: 100%;
+}
+
+#imgGR-register {
+  position: relative;
+  left: 30%;
+  top: 15%;
+}
+
+/* end card */
+
+
+/* Mobile - up to 767px */
+@media (max-width: 767px) {
+
+  /* Styles for mobile devices */
+  #Textarea1-register,
+  #UserName-register,
+  .labelUserName,
+  .address {
+    margin-left: 0;
+    width: 100%;
+
+  }
+
+  #name-register, #email-register, #Password-register {
+    width: 100%;
+  }
+
+  #imgGR-register {
+    display: none;
+  }
+
+  #formInside-register {
+    flex-direction: column;
+  }
+}
+
+/* Tablet - 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for tablets */
+}
+
+/* Laptop - 1025px to 1280px */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* Styles for laptops */
+}
+
+/* Desktop - 1281px and up */
+@media (min-width: 1281px) {
+  /* Styles for desktops */
+}

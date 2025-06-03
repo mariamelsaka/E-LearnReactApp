@@ -1,0 +1,516 @@
+/* two */
+#student {
+  height: 900px;
+  padding-bottom: 50px;
+}
+
+#girl {
+  z-index: 4;
+  position: relative;
+  top: 9%;
+  left: 10%;
+}
+
+#circle {
+  z-index: 3;
+  position: relative;
+  bottom: 98%
+}
+
+#emptyCircle {
+  z-index: 2;
+  position: relative;
+  bottom: 45%;
+  right: 5%;
+}
+
+#circleGroup {
+  z-index: 1;
+  position: relative;
+  left: 28%;
+  bottom: 131%;
+}
+
+#vd3 {
+  z-index: 5;
+  position: relative;
+  right: 100px;
+  bottom: 200%;
+}
+
+#vd2 {
+  z-index: 5;
+  position: relative;
+  left: 20%;
+  bottom: 200%;
+}
+
+#vd1 {
+  z-index: 5;
+  position: relative;
+  right: 8%;
+  bottom: 175%;
+}
+
+/* end sec 1 */
+
+/* start sec 2 services */
+
+#services {
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 12em;
+  /*gbt*/
+
+}
+
+#services h6 {
+  color: #20B486;
+  margin-bottom: 10px;
+  /*gbt*/
+}
+
+#services h2 {
+  font-weight: bolder;
+  margin-bottom: 40px;
+  /*gbt*/
+}
+
+#services .CARD {
+  /*gbt*/
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  height: 100%;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -ms-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+#services .CARD:hover {
+  background-color: #4AC8AE;
+  color: white;
+  /*gbt*/
+}
+
+#services .CARD .headCard {
+  display: flex;
+  /*gbt  */
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#services .CARD .headCard h4 {
+  /*gbt*/
+  font-weight: bold;
+  margin-left: 15px;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+#services .CARD .headCard h4 pre {
+  font-weight: bold;
+  position: relative;
+  top: 12px;
+  left: 13px;
+}
+
+#services .CARD p {
+  /* margin: 10px; */
+  /* gbt */
+  font-size: 14px;
+  margin: 0;
+  text-align: left;
+}
+
+/* end sec 2  services*/
+
+
+/* start sec 3 courses price */
+/* gbt */
+/* sec 3 */
+#courses {
+  width: 100%;
+  margin-bottom: 70px;
+  text-align: center;
+  padding: 40px 15px;
+}
+
+.brief {
+  margin: 8% 5% 2% 5%;
+  text-align: left;
+}
+
+.brief h6 {
+  color: #1A906B;
+}
+
+#courses .card {
+  margin: 15px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+#courses .card:hover {
+  transform: translateY(-5px);
+}
+
+#courses .card img {
+  padding: 20px;
+  object-fit: cover;
+}
+
+.deTitle {
+  color: #1A906B;
+  font-weight: 600;
+}
+
+.card-text {
+  color: #667085;
+  font-size: 14px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.price h4 {
+  color: #3FC89E;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+
+
+/* end sec 3 courses price */
+
+
+/* start sec4 */
+.instructors {
+  width: 100%;
+  text-align: center;
+  padding: 40px 15px;
+  /*gbt*/
+}
+
+/* gbt */
+.instructors .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  margin: 20px auto;
+  padding: 30px 20px;
+  background-color: #F9FAFB;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  text-align: center;
+}
+
+/* gbt */
+#avatar {
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+.description, .sec4-desc {
+  color: #667085;
+  font-size: 14px;
+  /* gbt */
+}
+
+.sec4-title, .positionJob {
+  color: #22B286;
+  font-weight: 600;
+  /* gbt */
+}
+
+.sec4-hero-title {
+  font-weight: bolder;
+}
+
+/* gbt */
+.name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+}
+
+.accountLinks {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* end sec4 */
+
+
+/* start sec5 */
+
+.uni {
+  height: 400px;
+  background-color: #F0FAF7;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#uniImg {
+  padding-top: 55px;
+  padding-left: 37.5em;
+
+}
+
+#UniTitle {
+  font-weight: bold;
+  padding: 1% 7% 1% 7%;
+}
+
+#uniImg2 {
+  margin-bottom: 10px;
+  padding-left: 37.5em;
+}
+
+#uniP {
+  font-weight: 300;
+}
+
+#uniP1 {
+  color: #667085;
+}
+
+/* end sec5 */
+
+
+/* start sec6 */
+.blogs {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#blog {
+  /* gbt */
+  margin: 3% auto;
+}
+
+#section-title {
+  font-weight: bold;
+  text-align: start;
+  margin-left: 1rem;
+}
+
+#Date1, #Date3 {
+  color: #20B486;
+  font-weight: bold;
+  /* gbt */
+  padding-top: 10px;
+  padding-left: 0;
+}
+
+.rightTxt {
+  text-align: left;
+  /* gbt */
+  padding: 0 15px;
+}
+
+.titleBlog1, .titleBlog3 {
+  font-weight: bold;
+  /* gbt */
+  margin-top: 10px;
+}
+
+.descBlog1, .descBlog3 {
+  color: #667085;
+  /* gbt */
+  padding-left: 0;
+}
+
+/* .descBlog1{
+    padding-left: 25%;
+} */
+.ImgBlog {
+  padding-bottom: 20px;
+  /* gbt */
+  width: 100%;
+  height: auto;
+  padding-left: 0;
+  /* Remove fixed padding */
+}
+
+/* end sec6 */
+
+
+/* Mobile - up to 767px */
+@media (max-width: 767px) {
+
+  /* sec1 */
+  #titlesTxt {
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  #title, #title1, #title2 {
+    font-size: 2rem;
+    margin-left: 0;
+  }
+
+  #smallTxt {
+    font-size: 0.9rem;
+    margin: 1rem 0;
+  }
+
+  .txts, .serv {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .serv img {
+    width: 100px;
+    height: auto;
+    margin: 10px 0;
+    left: 0;
+    top: 0;
+  }
+
+  .head h2, .head p {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #student {
+    display: none;
+  }
+
+  .ma-mobile {
+    margin-bottom: 3em;
+  }
+
+  /* sec1 */
+  /* sec2 */
+  #services {
+    margin-top: 6em;
+  }
+
+  #services .CARD {
+    padding: 15px;
+  }
+
+  .card-wrapper {
+    margin-bottom: 2rem;
+  }
+
+  #services .CARD .headCard h4 {
+    font-size: 16px;
+  }
+
+  #services .CARD p {
+    font-size: 13px;
+  }
+
+  /* sec2 */
+  /* sec3 */
+  .card-body {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .price h4 {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  #courses .card img {
+    padding: 10px;
+  }
+
+  /* sec3 */
+  /* sec4 */
+  .instructors .card {
+    padding: 20px 15px;
+  }
+
+  .card-wrapper1 {
+    margin-bottom: 10%;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+
+  .positionJob {
+    font-size: 13px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .accountLinks {
+    gap: 10px;
+  }
+
+  /* sec4 */
+  /* sec5 */
+  .uni {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  #uniImg,
+  #uniImg2 {
+    padding-left: 0;
+    padding-top: 1rem;
+    margin: 0 auto;
+    display: block;
+  }
+
+  #UniTitle {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  #uniP,
+  #uniP1 {
+    font-size: 0.9rem;
+  }
+
+  /* sec5 */
+  /* sec6 */
+  .titleBlog1,
+  .descBlog1,
+  #Date1,
+  #Date3 {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  /* sec6 */
+}
+
+/* Tablet - 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for tablets */
+}
+
+/* Laptop - 1025px to 1280px */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* Styles for laptops */
+}
+
+/* Desktop - 1281px and up */
+@media (min-width: 1281px) {
+  /* Styles for desktops */
+}

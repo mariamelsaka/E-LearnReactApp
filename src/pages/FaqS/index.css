@@ -1,0 +1,23 @@
+/* Namespace Bootstrap-specific classes */
+.bootstrap .accordion-collapse.collapse {
+    display: none !important;
+  }
+  
+  .bootstrap .accordion-collapse.collapse.show {
+    display: block !important;
+  }
+  
+  /* Increase specificity for Bootstrap buttons */
+  .bootstrap .accordion-button {
+    transition: none !important;
+  }
+  
+  /* Prevent Tailwind interference */
+  .accordion-collapse.collapse.show {
+    display: block !important;
+  }
+  
+  .accordion-collapse.collapse:not(.show) {
+    display: none !important;
+  }
+  

@@ -1,0 +1,28 @@
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 1.25em;
+    right: 1.4em;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #20B486;
+    cursor: pointer;
+    padding: 1em;
+    border-radius: 10px;
+    width: 3em;
+}
+
+#myBtn:hover {
+    background-color: #199e74;
+}
+
+/* 🔹 Responsive Adjustments */
+/* Mobile navbar open styling - up to 767px sm */
+@media (max-width: 767px) {
+    #myBtn {
+        position: fixed;
+        bottom: 5em;
+        right: 1em;
+    }
+}

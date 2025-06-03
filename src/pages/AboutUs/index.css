@@ -1,0 +1,313 @@
+#parent {
+  display: grid;
+}
+
+#sec1 {
+  height: 400px;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 12%;
+}
+
+#sec1col1 {
+  padding-left: 5%;
+}
+
+#secTitle {
+  color: #1A906B;
+  font-weight: bolder;
+}
+
+#sec1col1 h2::first-line {
+  color: #FF9B26;
+  font-weight: bold;
+}
+
+#col2sec1 {
+  position: relative;
+}
+
+#gray {
+  background-color: #F2F2F2;
+  height: 30em;
+  width: 30em;
+  z-index: 3;
+  margin-left: 8%;
+}
+
+#img1-AboutUs, #img2-AboutUs {
+  z-index: 2;
+  width: 23.5em;
+  height: 15.375em;
+  position: relative;
+}
+
+#img1-AboutUs {
+  left: 5%;
+  bottom: 14em;
+}
+
+#img2-AboutUs {
+  right: -11.5em;
+  bottom: 47em;
+}
+
+/* start sec2 */
+#sec2 {
+  width: 100%;
+  margin-bottom: 6%;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#sec2col1, #sec2col2 {
+  padding: 1rem;
+}
+
+#sec2col1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#graysec2 {
+  background-color: #F2F2F2;
+  height: 29em;
+  width: 29em;
+  top: 20%;
+  left: 10%;
+  border-radius: 10px;
+}
+
+#img3-AboutUs {
+  width: 92%;
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+
+#sec2col2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#sec2col2 h4 {
+  color: #22B286;
+  font-weight: bold;
+}
+
+#sec2col2 h2 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+#sec2col2 p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+/* end sec2 */
+
+/* start sec3 */
+#sec3 {
+  height: 100%;
+  width: 100%;
+  padding: 5%;
+}
+
+#headSec3 {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+#headSec3 h3 {
+  color: #22B286;
+  font-weight: bolder;
+}
+
+#headSec3 h2 {
+  font-weight: bolder;
+}
+
+#row1Sec3 {
+  margin-bottom: 5%;
+}
+
+#row1Sec3 .card, #row2Sec3 .card {
+  width: 300px;
+  height: 200px;
+  margin-left: 14%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#row1Sec3 .card h2, #row2Sec3 .card h2 {
+  color: #22B286;
+  padding-top: 3%;
+  font-weight: bolder;
+}
+
+.circle {
+  box-sizing: border-box;
+  height: 100%;
+  width: 17%;
+  border-top-left-radius: 110px;
+  border-top-right-radius: 110px;
+  background: #22B286;
+  opacity: 0.1;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+#one, #three, #five {
+  background-color: #F7FDF9;
+}
+
+#one, #two, #three {
+  margin-bottom: 10%;
+}
+
+#one .circle, #three .circle, #five .circle {
+  transform: rotate(-45deg);
+  position: relative;
+  top: 19%;
+  right: 5%;
+  padding: 5%;
+}
+
+#two, #four, #six {
+  background-color: #F2F2F2;
+}
+
+#two .circle, #four .circle, #six .circle {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: relative;
+  top: 19%;
+  left: 1%;
+  padding: 5%;
+}
+
+
+/* end sec3 */
+
+/* Mobile - up to 767px */
+@media (max-width: 767px) {
+
+  /* Styles for mobile devices */
+  /* sec1 */
+  #col2sec1 {
+    display: none;
+  }
+
+  /* sec1 */
+  /* sec1 sec2 */
+  #sec1col1, #sec2col2 {
+    text-align: center;
+  }
+
+  #sec1col1 h1, #sec1col1 h2, #sec2col2 h2 {
+    font-size: 1.4rem;
+  }
+
+  #sec1, #sec2 {
+    padding: 5% 3%;
+    flex-direction: column;
+  }
+
+  /* sec1 sec2 */
+  /* sec2 */
+  #sec2 {
+    flex-direction: column;
+    height: auto;
+    margin-left: 1%;
+  }
+
+  #sec2col1 {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #graysec2 {
+    width: 80%;
+    /* Adjust for screen */
+    height: auto;
+    /* Let it scale naturally */
+    position: static;
+    /* Remove absolute positioning on mobile */
+  }
+
+  #img3-AboutUs {
+    width: 100%;
+    margin: 1rem 0 0 0;
+  }
+
+  #sec2col2 h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  #sec2col2 p {
+    text-align: center;
+  }
+
+  #sec2col2 button {
+    align-self: center;
+  }
+
+  /* sec3 */
+  #row1Sec3 .card,
+  #row2Sec3 .card {
+    width: 90% !important;
+    margin: 5% auto !important;
+    height: auto;
+  }
+
+  #four, #five, #six {
+    margin-bottom: 10%;
+  }
+
+  #row1Sec3 {
+    margin-left: 5%;
+  }
+
+  #one .circle, #three .circle, #five .circle {
+
+    top: 2rem;
+    right: 0.5rem;
+
+  }
+
+  #two .circle, #four .circle, #six .circle {
+    top: 2rem;
+  }
+
+}
+
+/* Tablet - 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for tablets */
+
+}
+
+/* Laptop - 1025px to 1280px */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* Styles for laptops */
+}
+
+/* Desktop - 1281px and up */
+@media (min-width: 1281px) {
+  /* Styles for desktops */
+}
