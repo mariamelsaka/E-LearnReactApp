@@ -2,6 +2,7 @@ import { IMAGES } from "../../config/assets";
 import Image from "../../components/Ui/Image";
 import Button from "../Ui/Button";
 import { Idata, IdataAPI } from "../../interfaces";
+import Animate from "../Animate";
 
 interface Iprop{
   item: IdataAPI;
@@ -11,6 +12,7 @@ interface Iprop{
 const Row = ({  item, data, onClick }: Iprop) => {
   return (
       <>
+      <Animate>
         <Image
           src={item.snippet.thumbnails.high.url}
           alt="Course Thumbnail"
@@ -31,6 +33,7 @@ const Row = ({  item, data, onClick }: Iprop) => {
           </div>
           <Button onClick={onClick}>Enroll Now</Button>
         </div>
+        </Animate>
       </>
   );
 };
