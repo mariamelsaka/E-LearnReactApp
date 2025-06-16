@@ -21,7 +21,15 @@ User Authentication: A robust system for users to register, log in, and log out 
 
 React Integration: The project is being refactored to use React, enhancing the overall user interface, performance, and maintainability.  
 
- the deployed version : https://6850121392cd7d45d45b5c52--elearningapp1.netlify.app/contactUs , if u want to login use this credential 
- username:mariamalaaalsaqa@gmail.com 
- password:123456
- but u can't register or make issue in contact us page , because i can't deploy strapi porject , it's only deploy the static website
+ ## the deployed version : 
+ https://6850121392cd7d45d45b5c52--elearningapp1.netlify.app 
+ 
+ if u want to login use this credential 
+ <br>
+ username: mariamalaaalsaqa@gmail.com 
+  <br>
+ password: 123456
+  <br>
+**⚠️ Note:** You can't register or make issue in contact us page, because I can't deploy Strapi project, it's only deploy the static website.
+
+
