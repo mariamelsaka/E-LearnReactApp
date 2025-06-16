@@ -1,5 +1,5 @@
-import MemoNavItem from "../components/MemoNavItem";
-import Button from "../components/Ui/Button";
+import MemoNavItem from "@components/MemoNavItem";
+import Button from "@Ui/Button";
 
 const PageNotFound = () => {
   return (

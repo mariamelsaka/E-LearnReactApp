@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
-import Image from "../../Ui/Image";
-import { IMAGES } from "../../../config/assets";
+import Image from "@Ui/Image";
+import { IMAGES } from "@config/assets";
 import "./index.css"
 import { memo } from "react";
 const Footer = () => {

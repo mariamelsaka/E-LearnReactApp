@@ -1,8 +1,8 @@
 import { useLocation } from 'react-router-dom';
-import Image from "../../components/Ui/Image";
-import { IMAGES } from "../../config/assets";
+import Image from "@Ui/Image";
+import { IMAGES } from "@config/assets";
 import { useEffect } from 'react';
-import Animate from '../../components/Animate';
+import Animate from '@components/Animate';
 const CourseDetailPage = () => {
       useEffect(() => {
         document.title = "specifc course";

@@ -131,15 +131,15 @@
 
 // export default Courses;
 
-import SectionOne from "../../components/Courses/SectionOne";
+import SectionOne from "@components/Courses/SectionOne";
 import axios from "axios";
 import { useState, useEffect,useMemo,useCallback } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import Row from "../../components/Courses/Row";
+import Row from "@components/Courses/Row";
 import { Idata, IdataAPI } from "../../interfaces";
-import { MakeArrayForSeed } from "../../utils/functions";
+import { MakeArrayForSeed } from "@utils/functions";
 import { fakerEN } from "@faker-js/faker";
-import Animate from "../../components/Animate";
+import Animate from "@components/Animate";
 
 const Courses = () => {
     useEffect(() => {

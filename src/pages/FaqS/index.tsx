@@ -1,7 +1,7 @@
 import { fakerEN } from "@faker-js/faker";
-import { MakeArrayForSeed } from "../../utils/functions";
+import { MakeArrayForSeed } from "@utils/functions";
 import { useEffect, useState } from "react";
-import Animate from "../../components/Animate";
+import Animate from "@components/Animate";
 interface Idata {
   sentence: string;
   paragraph: string;

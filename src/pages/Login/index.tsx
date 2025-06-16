@@ -1,18 +1,18 @@
-import PageLayout from "../../components/Layout/PageLayout";
-import Form from "../../components/Ui/Form";
-import Input from "../../components/Ui/Input";
-import Label from "../../components/Ui/Label";
+import PageLayout from "@components/Layout/PageLayout";
+import Form from "@Ui/Form";
+import Input from "@Ui/Input";
+import Label from "@Ui/Label";
 import "./index.css";
-import Image from "../../components/Ui/Image";
-import { IMAGES } from "../../config/assets";
+import Image from "@Ui/Image";
+import { IMAGES } from "@config/assets";
 import { CredentialsLogin, IErrorResponse } from '../../interfaces/index';
 import { useForm } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup"
 import { loginSchema } from "../../validation";
 import { AxiosError } from "axios";
-import AxiosInstance from "../../config/axios.config";
+import AxiosInstance from "@config/axios.config";
 import toast from "react-hot-toast";
-import InputErrorMessage from "../../components/Ui/InputErrorMessage";
+import InputErrorMessage from "@Ui/InputErrorMessage";
 import { useCallback, useEffect } from "react";
 
 const Login = () => {

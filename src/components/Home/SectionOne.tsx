@@ -221,9 +221,9 @@
 // export default SectionOne
 
 
-import Image from "../../components/Ui/Image";
+import Image from "@Ui/Image";
 import { IMAGES } from "../../config/assets";
-import Button from "../Ui/Button";
+import Button from "@Ui/Button";
 
 const SectionOne = () => {
   return (

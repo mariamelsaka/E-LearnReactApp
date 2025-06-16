@@ -1,10 +1,10 @@
 import "./index.css";
-import SectionThree from "../../components/AboutUs/SectionThree";
-import SectionOne from "../../components/AboutUs/SectionOne";
-import SectionTwo from "../../components/AboutUs/SectionTwo";
-import BenefitsHeader from "../../components/AboutUs/BenefitsHeader";
+import SectionThree from "@components/AboutUs/SectionThree";
+import SectionOne from "@components/AboutUs/SectionOne";
+import SectionTwo from "@components/AboutUs/SectionTwo";
+import BenefitsHeader from "@components/AboutUs/BenefitsHeader";
 import { useEffect } from "react";
-import Animate from "../../components/Animate";
+import Animate from "@components/Animate";
 const AboutUs = () => {
   useEffect(() => {
     document.title = "about us";

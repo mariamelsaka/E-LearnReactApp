@@ -1,5 +1,5 @@
-import Image from "../../components/Ui/Image";
-import { IMAGES } from "../../config/assets";
+import Image from "@Ui/Image";
+import { IMAGES } from "@config/assets";
 import { Section4List } from "../../data";
 const SectionFour = () => {
   return (

@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
 import "./PageLayout.css"
-import Image from "../../components/Ui/Image";
-import { IMAGES } from "../../config/assets";
+import Image from "@Ui/Image";
+import { IMAGES } from "@config/assets";
 import { memo } from "react";
 import Animate from "../Animate";
 interface IProps {

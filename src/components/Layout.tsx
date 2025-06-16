@@ -5,8 +5,8 @@ import { memo, useRef, useEffect, useState, lazy, Suspense } from "react";
 import NavbarSkeleton from "./Layout/Skeleton/NavbarSkeleton";
 import FooterSkeleton from "./Layout/Skeleton/FooterSkeleton";
 // lazy load components -------------------------------------
-const NavBar = lazy(() => import("../components/Layout/NavBar/NavBar"));
-const Footer = lazy(() => import("../components/Layout/Footer/Footer"));
+const NavBar = lazy(() => import("@components/Layout/NavBar/NavBar"));
+const Footer = lazy(() => import("@components/Layout/Footer/Footer"));
 
 // lazy load components -------------------------------------
 const Layout = () => {

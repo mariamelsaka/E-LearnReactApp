@@ -1,13 +1,13 @@
 import "./index.css";
-import Image from "../../components/Ui/Image";
-import { IMAGES } from "../../config/assets";
-import SectionOne from "../../components/Home/SectionOne";
-import SectionTwo from "../../components/Home/SectionTwo";
-import SectionThree from "../../components/Home/SectionThree";
-import SectionFour from "../../components/Home/SectionFour";
-import SectionSix from "../../components/Home/SectionSix";
+import Image from "@components/Ui/Image";
+import { IMAGES } from "@config/assets";
+import SectionOne from "@components/Home/SectionOne";
+import SectionTwo from "@components/Home/SectionTwo";
+import SectionThree from "@components/Home/SectionThree";
+import SectionFour from "@components/Home/SectionFour";
+import SectionSix from "@components/Home/SectionSix";
 import { memo, useEffect } from "react";
-import Animate from "../../components/Animate";
+import Animate from "@components/Animate";
 
 
 const Home = () => {
