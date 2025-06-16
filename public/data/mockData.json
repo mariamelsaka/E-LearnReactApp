@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "mariam23",
+      "email": "mariamalaaalsaqa@gmail.com",
+      "name": "mariam",
+      "address": "hadayek october",
+      "contact_us_issues": [1, 2]
+    },
+    {
+      "id": 2,
+      "username": "user2",
+      "email": "user2@example.com",
+      "password": "password456",
+      "name": "User Two",
+      "address": "456 Oak Ave, City B",
+      "contact_us_issues": [3]
+    }
+  ],
+  "issues": [
+    {
+      "id": 1,
+      "name": "mariam",
+      "email": "mariamalaaalsaqa@gmail.com",
+      "description": "Description of issue one",
+      "users_permissions_user": 1
+    },
+    {
+      "id": 2,
+      "name": "Issue Two",
+      "email": "issue2@example.com",
+      "description": "Description of issue two",
+      "users_permissions_user": 1
+    },
+    {
+      "id": 3,
+      "name": "Issue Three",
+      "email": "issue3@example.com",
+      "description": "Description of issue three",
+      "users_permissions_user": 2
+    }
+  ]
+}

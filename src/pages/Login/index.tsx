@@ -5,12 +5,13 @@ import Label from "@components/Ui/Label";
 import "./index.css";
 import Image from "@components/Ui/Image";
 import { IMAGES } from "@config/assets";
-import { CredentialsLogin, IErrorResponse } from '../../interfaces/index';
+// import { CredentialsLogin, IErrorResponse } from '../../interfaces/index';
+import { CredentialsLogin } from '../../interfaces/index';
 import { useForm } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup"
 import { loginSchema } from "../../validation";
-import { AxiosError } from "axios";
-import AxiosInstance from "@config/axios.config";
+// import { AxiosError } from "axios";
+// import AxiosInstance from "@config/axios.config";
 import toast from "react-hot-toast";
 import InputErrorMessage from "@components/Ui/InputErrorMessage";
 import { useCallback, useEffect } from "react";
@@ -31,50 +32,90 @@ const Login = () => {
   })
   
 console.log(watch()); // This will log the form va
-  const onSubmit = useCallback(async (data:CredentialsLogin) => {
-    console.log(data);
-    // reset(); // Clear the form fields after submission
-    try {
-      //  * 2 - Fulfilled => SUCCESS => (OPTIONAL)
-      const { status, data: resData } = await AxiosInstance.post(
-        "/auth/local",
-        data
-      );
-      console.log(data);
-      console.log(resData);
-      // const { status } = await AxiosInstance.post("/auth/local/login", data);
-      if (status === 200) {
-        toast.success("You will navigate to the home page after 2 seconds.", {
-          position: "bottom-center",
-          duration: 1500,
-          style: {
-            backgroundColor: "black",
-            color: "white",
-            width: "fit-content",
-          },
+  // const onSubmit = useCallback(async (data:CredentialsLogin) => {
+  //   console.log(data);
+  //   // reset(); // Clear the form fields after submission
+  //   try {
+  //     //  * 2 - Fulfilled => SUCCESS => (OPTIONAL)
+  //     const { status, data: resData } = await AxiosInstance.post(
+  //       "/auth/local",
+  //       data
+  //     );
+  //     console.log(data);
+  //     console.log(resData);
+  //     // const { status } = await AxiosInstance.post("/auth/local/login", data);
+  //     if (status === 200) {
+  //       toast.success("You will navigate to the home page after 2 seconds.", {
+  //         position: "bottom-center",
+  //         duration: 1500,
+  //         style: {
+  //           backgroundColor: "black",
+  //           color: "white",
+  //           width: "fit-content",
+  //         },
           
-        });
-        localStorage.setItem("loggedInUser", JSON.stringify(resData));
-        setTimeout(() => {
-          location.replace("/");//location is web api, replace change the current url to other url
-          // navigate('/',{}) this will not work because will not understand what happen in the local storage
-          //also navigate when move to other page it does not refresh the page and we need to refresh the page to go to home
-        }, 2000);
-      }
-    } catch (error) {
-      //  * 3 - Rejected => FAILED => (OPTIONAL)
+  //       });
+  //       localStorage.setItem("loggedInUser", JSON.stringify(resData));
+  //       setTimeout(() => {
+  //         location.replace("/");//location is web api, replace change the current url to other url
+  //         // navigate('/',{}) this will not work because will not understand what happen in the local storage
+  //         //also navigate when move to other page it does not refresh the page and we need to refresh the page to go to home
+  //       }, 2000);
+  //     }
+  //   } catch (error) {
+  //     //  * 3 - Rejected => FAILED => (OPTIONAL)
       
-      console.log(error);
-      const errorObj=error as AxiosError<IErrorResponse>;
-      console.log(errorObj.response)
-      console.log(errorObj.response?.data?.error?.message)
-      toast.error(`${errorObj.response?.data.error.message}`, {
-        position: "bottom-center",
-        duration: 4000,
-      });
+  //     console.log(error);
+  //     const errorObj=error as AxiosError<IErrorResponse>;
+  //     console.log(errorObj.response)
+  //     console.log(errorObj.response?.data?.error?.message)
+  //     toast.error(`${errorObj.response?.data.error.message}`, {
+  //       position: "bottom-center",
+  //       duration: 4000,
+  //     });
 
-    }
-  },[])
+  //   }
+  // },[])
+  // for deploy purpose----------------------------------------------------
+  const onSubmit = useCallback(async (data: CredentialsLogin) => {
+  console.log("Form data:", data);
+
+  // Temporary mock user for demonstration without calling API
+  if (data.identifier === "mariamalaaalsaqa@gmail.com" && data.password === "123456") {
+    const mockUser = {
+      id: 1,
+      username: "mariam23",
+      email: "mariamalaaalsaqa@gmail.com",
+      name: "mariam",
+      address: "hadayek october",
+      contact_us_issues: [],
+      jwt: "mock-jwt-token",
+    };
+
+    toast.success("Login successful (mock). Redirecting...", {
+      position: "bottom-center",
+      duration: 1500,
+      style: {
+        backgroundColor: "black",
+        color: "white",
+        width: "fit-content",
+      },
+    });
+
+    localStorage.setItem("loggedInUser", JSON.stringify(mockUser));
+    setTimeout(() => {
+      location.replace("/");
+    }, 2000);
+    return;
+  }
+
+  // If not matching mock user, show error
+  toast.error("Invalid mock credentials", {
+    position: "bottom-center",
+    duration: 3000,
+  });
+}, []);
+
   return (
     <>
 
