@@ -1,10 +1,10 @@
 import PageLayout from "@components/Layout/PageLayout";
-import Form from "@Ui/Form";
-import Input from "@Ui/Input";
-import Label from "@Ui/Label";
-import Textarea from "@Ui/Textarea";
+import Form from "@components/Ui/Form";
+import Input from "@components/Ui/Input";
+import Label from "@components/Ui/Label";
+import Textarea from "@components/Ui/Textarea";
 import "./index.css";
-import Image from "@Ui/Image";
+import Image from "@components/Ui/Image";
 import { IMAGES } from "@config/assets";
 import { ChangeEvent, FormEvent, useCallback, useEffect, useState } from "react";
 import { CredentialsRegister,IErrorResponse } from '../../interfaces/index';

@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom";
 import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import "./index.css"
 import { FiMenu, FiX } from 'react-icons/fi'; // FiMenu = open, FiX = close
-import Button from "@Ui/Button";
+import Button from "@components/Ui/Button";
 import MemoNavItem from "../../MemoNavItem";
 const navItems = [
   { label: "Home", to: "/" },

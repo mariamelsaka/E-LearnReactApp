@@ -1,4 +1,4 @@
-import Image from "@Ui/Image";
+import Image from "@components/Ui/Image";
 import { Section6List } from "../../data";
 
 const SectionSix = () => {

@@ -1,6 +1,6 @@
 import { IMAGES } from "@config/assets";
-import Image from "@Ui/Image";
-import Button from "@Ui/Button";
+import Image from "@components/Ui/Image";
+import Button from "@components/Ui/Button";
 import { Idata, IdataAPI } from "../../interfaces";
 import Animate from "../Animate";
 

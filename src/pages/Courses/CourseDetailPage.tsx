@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom';
-import Image from "@Ui/Image";
+import Image from "@components/Ui/Image";
 import { IMAGES } from "@config/assets";
 import { useEffect } from 'react';
 import Animate from '@components/Animate';

@@ -3,7 +3,6 @@
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
     "baseUrl": "src",
     "paths": {
-      "@Ui/*": ["components/Ui/*"],
       "@components/*": ["components/*"],
       "@utils/*": ["utils/*"],
       "@config/*": ["config/*"]

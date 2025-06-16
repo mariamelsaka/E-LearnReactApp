@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import Image from "@Ui/Image";
+import Image from "@components/Ui/Image";
 import { IMAGES } from "@config/assets";
 import "./index.css"
 import { memo } from "react";

@@ -1,9 +1,9 @@
 import PageLayout from "@components/Layout/PageLayout";
-import Input from "@Ui/Input";
-import Label from "@Ui/Label";
-import Textarea from "@Ui/Textarea";
+import Input from "@components/Ui/Input";
+import Label from "@components/Ui/Label";
+import Textarea from "@components/Ui/Textarea";
 import "./index.css";
-import Image from "@Ui/Image";
+import Image from "@components/Ui/Image";
 import { IMAGES } from "@config/assets";
 import { CredentialsContactUs, IErrorResponse } from '../../interfaces/index';
 import { useForm } from "react-hook-form"
@@ -12,9 +12,9 @@ import { ContactUsSchema } from "../../validation";
 import { AxiosError } from "axios";
 import AxiosInstance from "@config/axios.config";
 import toast from "react-hot-toast";
-import InputErrorMessage from "@Ui/InputErrorMessage";
+import InputErrorMessage from "@components/Ui/InputErrorMessage";
 import { useCallback, useEffect } from "react";
-import Form from "@Ui/Form";
+import Form from "@components/Ui/Form";
 
 const ContactUs = () => {
   useEffect(() => {

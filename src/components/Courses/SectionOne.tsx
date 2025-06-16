@@ -1,5 +1,5 @@
 import { IMAGES } from "@config/assets"
-import Image from "@Ui//Image"
+import Image from "@components/Ui/Image"
 import "./index.css"
 import "./index.css"
 import { memo } from "react"
