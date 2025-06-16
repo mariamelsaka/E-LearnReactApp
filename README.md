@@ -13,6 +13,10 @@ This e-learning platform is designed to offer users the ability to view their co
 Main Features:
 Course Management: Students can access various courses, view materials, and track their progress.
 
+
+https://github.com/user-attachments/assets/80e59073-2a66-49ca-b902-fee56d52f7a3
+
+
 User Authentication: A robust system for users to register, log in, and log out of their accounts.
 
 React Integration: The project is being refactored to use React, enhancing the overall user interface, performance, and maintainability.
