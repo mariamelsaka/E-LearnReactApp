@@ -222,7 +222,7 @@ return <>
  <div className="container  pt-6" id="coursesAll">
 
   {apiRes.length > 0 ? (
-    <div  className="grid grid-cols-3 gap-6 px-4 pb-[2em]">
+    <div  className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 pb-[2em]">
       {apiRes.map((item, innerIndex) => {
         
         return (       

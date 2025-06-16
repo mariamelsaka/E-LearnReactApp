@@ -16,7 +16,7 @@ const Row = ({  item, data, onClick }: Iprop) => {
         <Image
           src={item.snippet.thumbnails.high.url}
           alt="Course Thumbnail"
-          className="w-full h-48 object-cover rounded-t-lg"
+          className="w-full h-48 sm:h-52 md:h-60 object-cover rounded-t-lg"
         />
         <div className="p-4">
           <p className="text-xl font-bold mb-2 truncate">{item.snippet.title}</p>
